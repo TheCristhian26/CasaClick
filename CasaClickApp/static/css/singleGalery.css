@@ -1,0 +1,212 @@
+.contentGalery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contentImg {
+    width: 70%;
+
+}
+
+/* loadimage */
+.printInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.imgCard {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgCard .contentImgCard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imgCard .contentImgCard img {
+    height: 100%;
+}
+
+.imgCard .contentImgCard button {
+    height: 100%;
+    border: none;
+    background-color: unset;
+    outline: none;
+    cursor: pointer;
+}
+
+/* imgPreview */
+
+.previewImg {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: .3s;
+}
+
+.previewImg.active {
+    height: 100%;
+}
+
+.previewImg .printImgPre {
+    width: 80%;
+    height: 90%;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.previewImg .printImgPre .btnClose {
+    width: 90%;
+    color: red;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.previewImg .printImgPre .btnClose i {
+    cursor: pointer;
+}
+
+.previewImg .printImgPre .imgView {
+    width: 90%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.previewImg .printImgPre .imgView img {
+    width: 90%;
+}
+
+
+
+.titleBtn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0;
+    color: red;
+}
+
+.titleBtn h2 {
+    font-size: 28px;
+}
+
+.titleBtn a {
+    color: red;
+    font-size: 20px;
+    padding: 5px 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.titleBtn a:hover {
+    transform: scale(.95);
+}
+
+/* querys adapter */
+@media screen and (max-width: 1224px) {
+    .printInfo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+
+    .createImg.active {
+        height: 450px;
+    }
+
+    .anyWhere {
+        flex-direction: column;
+    }
+
+    .printImg {
+        flex-direction: column;
+    }
+
+    .btnSendImage {
+        margin-top: 20px;
+    }
+
+    .previewImg .printImgPre {
+        height: 80%;
+        padding: 20px;
+    }
+
+    .previewImg .printImgPre .btnClose h3{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    .printInfo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+
+    .createImg.active {
+        height: 450px;
+    }
+
+    .anyWhere {
+        flex-direction: column;
+    }
+
+    .printImg {
+        flex-direction: column;
+    }
+
+    .btnSendImage {
+        margin-top: 20px;
+    }
+
+    .previewImg .printImgPre {
+        height: 40%;
+        padding: 20px;
+    }
+
+    .previewImg .printImgPre .btnClose h3{
+        font-size: 20px;
+    }
+
+    .titleBtn {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .titleBtn a {
+        margin-bottom: 10px;
+    }
+}

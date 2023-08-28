@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../style/favicon.svg" />
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Casa Click</title>
+</head>
+<body>
+    <header class="dflex fjustify-center faling-items">
+        <nav class="mainNav dflex faling-items fdirection-column">
+            <div class="visualIcons dflex fjustify-between faling-items">
+                <figure class="faling-items dflex"><img src="../style/logo_001.svg" alt="logo-casa-click"></figure>
+                <i class='bx bx-menu-alt-right menu-toggle'></i>
+            </div>
+            <div class="links dflex fdirection-column faling-items">
+                <a class="exitAction" href="#">Inicio</a>
+                <a class="exitAction" href="#">Comprar vivienda</a>
+                <a class="exitAction" href="#">Vender vivienda</a>
+                <a class="exitAction" href="#">Noticias</a>
+                <a class="exitAction" href="#">Mapa de viviendas</a>
+                <div class="linkAccess dflex faling-items fjustify-between"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide dflex fjustify-center faling-items">
+                        <section class="slider">
+                            <figure><img src="https://res.cloudinary.com/deo9hwbhx/image/upload/v1670891487/img__001_na5rik.jpg" alt="img__001"></figure>
+                            <div class="sliderText dflex fjustify-center faling-items fdirection-column">
+                                <h2>Mapa de propiedades</h2>
+                                <div class="parrafoContent">
+                                    <p>Mira toda nuestra oferta de propiedades que tenemos para ti</p>
+                                </div>
+                                <a href="#">Ver más</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide dflex fjustify-center faling-items">
+                        <section class="slider">
+                            <figure><img src="https://res.cloudinary.com/deo9hwbhx/image/upload/v1670891487/img__002_zezfg4.jpg" alt="img__002"></figure>
+                            <div class="sliderText dflex fjustify-center faling-items fdirection-column">
+                                <h2>Venta de propiedad</h2>
+                                <div class="parrafoContent">
+                                    <p>lorem ipsum devation cors</p>
+                                </div>
+                                <a href="#">Ver más</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide dflex fjustify-center faling-items">
+                        <section class="slider">
+                            <figure><img src="https://res.cloudinary.com/deo9hwbhx/image/upload/v1670891486/img__003_lanivm.webp" alt="img__003"></figure>
+                            <div class="sliderText dflex fjustify-center faling-items fdirection-column">
+                                <h2>Compra de propiedad</h2>
+                                <div class="parrafoContent">
+                                    <p>lorem ipsum devation cors</p>
+                                </div>
+                                <a href="#">Ver más</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news dflex fjustify-center faling-items fdirection-column" id="news">
+            <h2 style="color: red; font-size: 35px;margin-top: 50px;text-align:center;" class="titleNews">Ultimas noticias del sector inmoviliario</h2>
+            <div class="parrafoIndex">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+            </div>
+            <section class="newContent dflex fdirection-column faling-items">
+
+            </section>
+            <a class="allNews" href="../static/pages/public/noticias.html">Ver más noticias</a>
+        </section>
+        <section class="mapa" id="mapa">
+            <div class="pinesMap dflex fjustify-between">
+                <div class="cardPin dflex fdirection-column faling-items">
+                    <figure><img src="../style/Local.png" alt="localPin"></figure>
+                    <p class="green">Local</p>
+                </div>
+                <div class="cardPin dflex fdirection-column faling-items">
+                    <figure><img src="../style/casa.png" alt="casaPin"></figure>
+                    <p class="blue">Casa</p>
+                </div>
+                <div class="cardPin dflex fdirection-column faling-items">
+                    <figure><img src="../style/apto.png" alt="apartamentoPin"></figure>
+                    <p class="grey">Apartamento</p>
+                </div>
+                <div class="cardPin dflex fdirection-column faling-items">
+                    <figure><img src="../style/finca.png" alt="fincaPin"></figure>
+                    <p class="red">Fincas</p>
+                </div>
+            </div>
+            <div class="contentMap">
+                <div id="map"></div>
+            </div>
+            <div class="btnLinks dflex faling-items fjustify-between">
+                <a href="../static/pages/public/map.html">Ver mapa</a>
+                <a href="#" class="dflex faling-items">
+                    <i class='bx bx-compass' ></i>
+                    <p>Obtener Ruta</p>
+                </a>
+                <a href="http://Wa.me/573186007255">Contacto</a>
+            </div>
+        </section>
+        <section class="newsletter dflex fjustify-center">
+            <div class="contentNewSletter dflex faling-items fdirection-column">
+                <h2>Unete a nuestras noticias</h2>
+                <div class="parrafoSletter">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed sollicitudin purus. Praesent et lacus convallis</p>
+                </div>
+                <div class="contentInputSend">
+                    <form>
+                        <input type="email" placeholder="Tu correo" name="CorreoSubscripcion">
+                        <button>Suscribete</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="propiedades dflex fjustify-center faling-items fdirection-column" style="margin-top: 50px;" id="propiedades">
+            <h2 style="color: red; font-size: 35px;margin-top: 50px;text-align:center;" class="titleNews">Propiedades</h2>
+            <div class="parrafoIndex">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+            </div>
+            <div class="printPropiedades dflex fdirection-column faling-items">
+
+            </div>
+            <a class="allNews" href="../static/pages/public/map.html">Ver más propiedades</a>
+        </section>
+        <section class="CompraVende dflex fdirection-column faling-items" style="margin-top: 60px;">
+            <div class="cardShop dflex faling-items fjustify-between contentVende" id="cvivienda">
+                <div class="contentText">
+                    <h2>Venta de propiedad</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <button class="compraComponent">Ver más</button>
+                </div>
+                <div class="contentImg">
+                    <img src="../style/img/img__001.jpg" alt="compra-de-vivienda">
+                </div>
+            </div>
+            <div class="cardShop dflex faling-items fjustify-between contentCompra" id="vvivienda">
+                <div class="contentImg">
+                    <img src="../style/img/img__001.jpg" alt="compra-de-vivienda">
+                </div>
+                <div class="contentText">
+                    <h2>Compra de propiedad</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <button class="compraComponent">Ver más</button>
+                </div>
+            </div>
+        </section>
+        <section class="contact dflex fdirection-column faling-items" style="margin-top: 50px;">
+            <div class="contentInformation">
+                <h2>Contacto</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, sint? Quia alias non qui, reiciendis nemo accusantium quo exercitationem possimus praesentium eligendi nobis quae eos animi blanditiis sunt dolor. Nam.</p>
+            </div>
+            <div class="contentFormulario">
+                <div class="imgContent">
+                    <img src="../style/logo_002.svg" alt="imagen-formulario">
+                </div>
+                <form action="">
+                    <div class="cardInput nameUser">
+                        <i class='bx bx-user-circle' ></i>
+                        <input type="text" placeholder="Nombre" name="nombre" required>
+                    </div>
+                    <div class="cardInput mailUser">
+                        <i class='bx bx-envelope' ></i>
+                        <input type="text" placeholder="Email" name="correo" required>
+                    </div>
+                    <div class="cardInput phoneUser">
+                        <i class='bx bx-phone' ></i>
+                        <input type="text" placeholder="Celular" name="celular" required>
+                    </div>
+                    <textarea name="mensaje" class="textForm" placeholder="Mensaje" required></textarea>
+                    <div class="contentCheck dflex">
+                        <input type="checkbox" name="tratamiento de datos" required>
+                        <p style="margin-left:10px;">Acepto el <a href="#" style="text-decoration: underline;">tratamiento de datos</a></p>
+                    </div>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="dflex fjustify-between">
+        <h3>Casa click </h3>
+        <div class="contentTauro dflex">
+            <p>Derechos reservados 2023 &copy;  </p>
+            <a href="#"></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../static/js/public/mapFront.js" type="module"></script>
+    <script src="../static/js/public/swiper.js"></script>
+    <script src="../static/js/main.js" type="module"></script>
+</body>
+</html>

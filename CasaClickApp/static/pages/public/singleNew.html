@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../main.css">
+    <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg" />
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="../../css/singleSite.css">
+    <title>Cargando...</title>
+</head>
+<body>
+    <div class="loader dflex faling-items fjustify-center fdirection-column">
+        <div class="lds-dual-ring"></div>
+        <p>Cargardo</p>
+    </div>
+    <header class="dflex fjustify-center faling-items">
+        <nav class="mainNav dflex faling-items fdirection-column">
+            <div class="visualIcons dflex fjustify-between faling-items">
+                <figure class="faling-items dflex"><img src="../../../assets/logo_001.svg" alt="logo-casa-click"></figure>
+                <i class='bx bx-menu-alt-right menu-toggle'></i>
+            </div>
+            <div class="links dflex fdirection-column faling-items">
+                <a href="../../../index.html#home">Inicio</a>
+                <a href="../../../index.html#cvivienda">Comprar vivienda</a>
+                <a href="../../../index.html#vvivienda">Vender vivienda</a>
+                <a href="../../pages/public/noticias.html">Noticias</a>
+                <a href="../../pages/public/map.html">Mapa de viviendas</a>
+                <div class="linkAccess dflex faling-items fjustify-between"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="contentHeader dflex faling-items fjustify-between">
+        <section class="apiInfo">
+            <h2 class="titleSingle"></h2>
+            <p>Tags: <strong class="categorySingle"></strong></p>
+        </section>
+        <section class="returnBtn">
+            <a class="dflex faling-items btnReturn">
+                <i class='bx bx-chevron-left'></i>
+                <p>Regresar</p>
+            </a>
+        </section>
+    </div>
+    <main class="singleSite">
+        <figure class="figureImg"><img class="imgSingle" alt="img-to-data-base"></figure>
+        <section class="singleInfo">
+            <div class="contentDescriptionInmueble">
+                <h2>Descripción del inmueble</h2>
+            </div>
+            <p class="singleDescription"></p>
+            <div class="printNews dflex fdirection-column">
+
+            </div>
+            <h2 style="margin-top: 50px;">Noticias de su interes</h2>
+            <div class="anotherNews"></div>
+        </section>
+    </main>
+
+    <footer class="dflex fjustify-between">
+        <h3>Casa click</h3>
+        <div class="contentTauro dflex">
+            <p>Since 2023 | </p>
+            <a href="https://www.taurodev.com">By Tauro Dev</a>
+        </div>
+    </footer>
+
+
+    <script src="../../js/public/singleNew.js" type="module"></script>
+    <script src="../../js/public/mainMap.js" type="module"></script>
+</body>
+</html>

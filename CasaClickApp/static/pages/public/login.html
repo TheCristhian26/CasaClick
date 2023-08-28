@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg" />
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../../main.css">
+    <title>Iniciar sesión para administrar Casa Click</title>
+</head>
+<body>
+    <main class="login dflex fdirection-column faling-items fjustify-center">
+        <div class="content dflex fdirection-column faling-items">
+            <section class="title dflex faling-items fjustify-between">
+                <h2>Iniciar sesión</h2>
+                <nav>
+                    <a href="#" onclick="window.history.back()" class="dflex faling-items">
+                        <i class='bx bx-chevron-left'></i>
+                        <p>Regresar</p>
+                    </a>
+                </nav>
+            </section>
+            <section class="formLogin dflex fdirection-column faling-items">
+                <form class="dflex fjustify-center fdirection-column">
+                    <section class="responseServer">
+                        <div class="resServer dflex faling-items fjustify-center">
+                            <i class='bx bx-x' ></i>
+                            <p>Usuario o contraseña incorrectas</p>
+                        </div>
+                    </section>
+                    <input type="text" class="username" placeholder="Usuario">
+                    <input type="password" class="password" placeholder="Contraseña">
+                    <div class="forgetPassowrd">
+                        <a href="./forgetPassword.html">Olvide mi contraseña</a>
+                    </div>
+                    <button>Iniciar sesión</button>
+                </form>
+            </section>
+        </div>
+        <footer class="createCount dflex faling-items fjustify-center">
+            <p>¿No tienes cuenta?</p>
+            <a href="./register.html">Obtener cuenta</a>
+        </footer>
+    </main>
+
+    <footer class="dflex fjustify-between">
+        <h3>Casa click</h3>
+        <div class="contentTauro dflex">
+            <p>Since 2023 | </p>
+            <a href="https://www.taurodev.com">By Tauro Dev</a>
+        </div>
+    </footer>
+
+    <script src="../../js/public/login.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+.contentTitle {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.contentTitle h3 {
+    color: red;
+    font-size: 28px;
+}
+
+.contentControllers {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.contentControllers .contentInput {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 28px;
+    color: red;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+.contentControllers .contentInput input {
+    margin-left: 5px;
+    background-color: unset;
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(129, 129, 129);
+}
+
+.contentControllers .contentInput input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(129, 129, 129);
+}
+
+.contentControllers a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: red;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.contentPrint {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.printNews {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    height: 220px;
+    width: 60%;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.12);
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
+.card figure {
+    width: 53%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.card figure img {
+    height: 80%;
+    border-radius: 15px;
+}
+
+.card .infoContent {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card .infoContent p {
+    color: var(--tone-gray-1);
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.card .infoContent .midWord:nth-child(2) {
+    margin: 0;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.card .infoContent .midWord:nth-child(3) {
+    margin: 0;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.card .infoContent h3 {
+    color: red;
+    font-size: 24px;
+}
+
+.card .infoContent a {
+    color: red;
+    font-size: 18px;
+    padding: 5px 40px;
+    border: 1px solid red;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.card .infoContent a:hover {
+    transform: scale(.95);
+}
+
+.loadMore {
+    margin: 40px 0;
+}
+
+.loadMore button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: red;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* seccion de querys adapters */
+
+@media screen and (max-width: 1370px) {
+    .card {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .card {
+        width: 80%;
+    } 
+
+    .cardShop {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cardShop .contentImg {
+        height: 400px;
+        width: 80%;
+    }
+
+    .cardShop .contentText {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .cardShop:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .contentPrint{
+        width: 95%;
+    }
+
+    .cardShop {
+        width: 95%;
+    }
+
+    .printPropiedades {
+        width: 95%;
+    }
+    
+    .card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .parrafoSletter {
+        width: 70%;
+    }
+
+    .card {
+        width: 100%;
+    }
+    .parrafoIndex {
+        width: 70%;
+    }
+
+    .titleNews {
+        font-size: 18px;
+    }
+
+    .contentFormulario {
+        flex-direction: column;
+    }
+
+    .contentFormulario .imgContent {
+        display: none;
+    }
+    .contentFormulario form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .cardShop {
+        padding: 20px;
+    }
+
+    .cardShop .contentText {
+        width: 100%;
+    }
+
+    .cardShop .contentText h2 {
+        font-size: 24px;
+    }
+
+    .cardShop .contentText p {
+        font-size: 14px;
+    }
+
+    .cardShop .contentText button {
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+
+    .cardShop .contentImg {
+        height: 250px;
+        width: 100%;
+    }
+
+    .contentFormulario {
+        width: 90%;
+    }
+
+    .contentInformation {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contentControllers {
+        flex-direction: column;
+    }
+
+    .contentControllers a {
+        margin-top: 10px;
+    }
+
+    .contentNewSletter {
+        width: 90%;
+    }
+
+    .parrafoSletter {
+        width: 90%;
+    }
+
+    .card {
+        height: 150px;
+    }
+    .card .infoContent p {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    
+    .card .infoContent h3 {
+        color: red;
+        font-size: 16px;
+    }
+    
+    .card .infoContent a {
+        font-size: 12px;
+    }
+    
+    .titleNews {
+        font-size: 14px;
+    }
+}
+

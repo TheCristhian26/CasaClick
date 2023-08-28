@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg" />
+    <link rel="stylesheet" href="../../css/private/main.css">
+    <link rel="stylesheet" href="../../css/private/singleGalery.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <title>cPanel | tarjeta individual para agregar galeria</title>
+</head>
+<body>
+    <header class="dflex fjustify-center faling-items">
+        <div class="visualIcons dflex fjustify-between faling-items">
+            <figure class="faling-items dflex"><img src="../../../assets/logo_001.svg" alt="logo-casa-click"></figure>
+            <div class="userData">
+                <h2>Marcos Admin</h2>
+                <p>Admin</p>
+            </div>
+        </div>
+    </header>
+    <div class="logout">
+        <i class='bx bx-log-out-circle'></i>
+    </div>
+    <div class="space"></div>
+    <div class="home">
+        <nav class="Links dflex faling-items fjustify-center">
+            <a href="./home.html">Inicio</a>
+            <a href="./map.html">Mapa</a>
+            <a href="./galery.html">Galeria de fotos</a>
+        </nav>
+    </div>
+    <!-- previsualización de la imgen -->
+    <div class="previewImg">
+        <section class="printImgPre">
+            <div class="btnClose">
+                <h3>Visualización imagen</h3>
+                <i class='bx bx-x closeBtnPre' ></i>
+            </div>
+            <div class="imgView">
+                <img alt="imagen-de-previsualización">
+            </div>
+        </section>
+    </div>
+    <!-- contenido dinamico -->
+    <main class="contentInformation">
+        <div class="information">
+            <div class="switch">
+                <h3>¿Quieres añadir una nueva foto a la galeria?</h3>
+                <section class="switchCreate">
+                    <input type="checkbox" id="check">
+                    <label for="check"></label>
+                </section>
+            </div>
+            <div class="createImg">
+                <h2>Recuerda no pasar los 5mb de peso en la imagen</h2>
+                <div class="anyWhere">
+                    <div class="printImg">
+                        <h3>Selecciona una imagen</h3>
+                    </div>
+                    <div class="inputCreate">
+                        <form style="display: none;" class="formImg">
+                            <input type="file" class="sendImg" name="image">
+                        </form>
+                        <button class="btnSend">
+                            <i class='bx bx-image-add' ></i>
+                            <p>Cargar imagen</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="btnSendImage"></div>
+            </div>
+            <div class="loadImg">
+
+            </div>
+        </div>
+    </main>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../js/private/main.js" type="module"></script>
+    <script src="../../js/private/singleGalery.js" type="module"></script>
+</body>
+</html>

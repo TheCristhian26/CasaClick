@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg" />
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <link rel="stylesheet" href="../../../main.css">
+    <link rel="stylesheet" href="../../css/map.css">
+    <title>Mapa de propiedades para compra y venta en Pamplona (finca raíz)</title>
+</head>
+<body>
+    <header class="dflex fjustify-center faling-items">
+        <nav class="mainNav dflex faling-items fdirection-column">
+            <div class="visualIcons dflex fjustify-between faling-items">
+                <figure class="faling-items dflex"><img src="../../../assets/logo_001.svg" alt="logo-casa-click"></figure>
+                <i class='bx bx-menu-alt-right menu-toggle'></i>
+            </div>
+            <div class="links dflex fdirection-column faling-items">
+                <a href="../../../index.html#home">Inicio</a>
+                <a href="../../../index.html#cvivienda">Comprar vivienda</a>
+                <a href="../../../index.html#vvivienda">Vender vivienda</a>
+                <a href="../../pages/public/noticias.html">Noticias</a>
+                <a href="../../pages/public/map.html">Mapa de viviendas</a>
+                <div class="linkAccess dflex faling-items fjustify-between"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="mapaSection">
+        <div id="map"></div>
+    </main>
+    <main class="controllers dflex fjustify-center faling-items">
+        <section class="controller dflex fjustify-center fdirection-column faling-items">
+            <div class="reloadIcon">
+                <button class="reload"><img src="../../../assets/icons/icon_002.svg" alt=""></button>
+            </div>
+            <div class="filterIcon dflex fdirection-column">
+                <button class="fincaPanel"><img src="../../../assets/icons/icon_003.svg" alt="filtro-fincas"></button>
+                <button class="casaPanel"><img src="../../../assets/icons/icon_005.svg" alt="filtro-casa"></button>
+                <button class="apartamentoPanel"><img src="../../../assets/icons/icon_006.svg" alt="filtro-apartamento"></button>
+                <button class="localPanel"><img src="../../../assets/icons/icon_007.svg" alt="filtro-locales"></button>
+                <button class="marketPanel"><img src="../../../assets/icons/icon_001.svg" alt="filtro-mercado"></button>
+                <button class="barPanel"><img src="../../../assets/icons/icon_004.svg" alt="filtro-bares"></button>
+            </div>
+        </section>
+    </main>
+    <main class="fly">
+        <section class="flyTo dflex faling-items fjustify-between">
+            <div class="backHome">
+                <a href="../../../index.html" class="dflex faling-items fjustify-center">
+                    <i class='bx bx-chevron-left'></i>
+                    <p>Regresar</p>
+                </a>
+            </div>
+            <div class="selectCity dflex faling-items">
+                <figure><img src="../../../assets/icons/icon_008.svg" alt="icon-pin-position"></figure>
+                <select name="city" id="city">
+                </select>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="../../js/public/mainMap.js" type="module"></script>
+    <script src="../../js/public/map.js" type="module"></script>
+    <script src="../../js/public/map.controller.js" type="module"></script>
+</body>
+</html>

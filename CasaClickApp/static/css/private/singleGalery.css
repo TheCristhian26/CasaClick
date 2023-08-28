@@ -1,0 +1,351 @@
+.contentInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information {
+    width: 70%;
+}
+
+/* Switch */
+.switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.switch h3 {
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.switchCreate input{
+    display: none;
+}
+
+.switchCreate label {
+    margin: auto;
+    display: block;
+    position: relative;
+    width: 70px;
+    height: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    border: .5px solid red;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.switchCreate label::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    left: 0;
+    top: 0;
+    transition: all .3s;
+}
+
+.switchCreate input:checked + label {
+    background-color: #FCF3CF;
+}
+
+.switchCreate input:checked + label::before {
+    left: 40px;
+}
+
+/* Seccion para crear la imagen */
+
+.createImg {
+    margin-top: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 0px;
+    transition: all .3s;
+}
+
+.createImg.active {
+    height: 250px;
+}
+
+.createImg h2 {
+    color: red;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.anyWhere {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.printImg {
+    display: flex;
+    align-items: center;
+}
+
+.printImg .imgContent {
+    width: 200px;
+    height: 130px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.printImg .imgContent img {
+    height: 100%;
+}
+
+.createImg button, .btnSend {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.createImg button:hover , .btnSend:hover{
+    transform: scale(.95);
+}
+
+.createImg button i, .btnSend i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* loader */
+
+.loader {
+    margin: 10px 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-bottom: 4px solid #FF3D00;
+    border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+/* loadimage */
+
+.loadImg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.imgCard {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgCard .contentImgCard {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imgCard .contentImgCard img {
+    height: 100%;
+}
+
+.imgCard .actionImg {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgCard .actionImg i {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    color: red;
+    cursor: pointer;
+}
+
+/* imgPreview */
+
+.previewImg {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: .3s;
+}
+
+.previewImg.active {
+    height: 100%;
+}
+
+.previewImg .printImgPre {
+    width: 80%;
+    height: 90%;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.previewImg .printImgPre .btnClose {
+    width: 90%;
+    color: red;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.previewImg .printImgPre .btnClose i {
+    cursor: pointer;
+}
+
+.previewImg .printImgPre .imgView {
+    width: 90%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.previewImg .printImgPre .imgView img {
+    width: 90%;
+}
+
+
+/* querys adapter */
+@media screen and (max-width: 1224px) {
+    .loadImg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+
+    .createImg.active {
+        height: 450px;
+    }
+
+    .anyWhere {
+        flex-direction: column;
+    }
+
+    .printImg {
+        flex-direction: column;
+    }
+
+    .btnSendImage {
+        margin-top: 20px;
+    }
+
+    .previewImg .printImgPre {
+        height: 80%;
+        padding: 20px;
+    }
+
+    .previewImg .printImgPre .btnClose h3{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    .loadImg {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+
+    .createImg.active {
+        height: 450px;
+    }
+
+    .anyWhere {
+        flex-direction: column;
+    }
+
+    .printImg {
+        flex-direction: column;
+    }
+
+    .btnSendImage {
+        margin-top: 20px;
+    }
+
+    .previewImg .printImgPre {
+        height: 40%;
+        padding: 20px;
+    }
+
+    .previewImg .printImgPre .btnClose h3{
+        font-size: 20px;
+    }
+}
+

@@ -1,0 +1,171 @@
+/* importacion de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* creacion de variables */
+:root {
+    /* font family */
+    --fnt-roboto: 'Roboto', sans-serif;
+
+    /* grosores de fuentes */
+    --fnt-thin: 100;
+    --fnt-light: 300;
+    --fnt-regular: 400;
+    --fnt-medium: 500;
+    --fnt-bold: 700;
+    --fnt-black: 900;
+
+    /* paleta de colores */
+    --tone-red: #FF0000;
+    --tone-red-1: #FFE5E5;
+    --tone-red-2: #FFB8B8;
+    --tone-red-3: #940000;
+    --tone-white: #fff;
+    --tone-black: #464646;
+    --tone-gray-1: #A7A7A7;
+    --tone-gray-2: #BDBDBD;
+    --tone-gray-3: #555555;
+
+    /* gradientes */
+    --tone-gradient: linear-gradient(90deg, rgba(255,126,126,1) 0%, rgba(255,68,68,1) 50%, rgba(255,0,0,1) 100%);
+}
+
+/* clases custom */
+.dflex {
+    display: flex;
+}
+
+.fjustify-center {
+    justify-content: center;
+}
+
+.fjustify-between {
+    justify-content: space-between;
+}
+
+.faling-items {
+    align-items: center;
+}
+
+.fdirection-column {
+    flex-direction: column;
+}
+
+.fdirection-row {
+    flex-direction: row;
+}
+
+/* configuracion general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fnt-roboto);
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 3;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.visualIcons {
+    width: 90%;
+    max-width: 1500px;
+}
+
+.userData {
+    color: var(--tone-red);
+}
+
+.userData h2{
+    font-size: 18px;
+}
+
+.userData p{
+    font-size: 14px;
+    color: var(--tone-gray-1);
+}
+
+.logout {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.logout i {
+    color: var(--tone-white);
+    background-color: var(--tone-red);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.space {
+    width: 100%;
+    height: 100px;
+}
+
+.home {
+    width: 100%;
+}
+
+.home nav {
+    width: 100%;
+}
+
+.home nav a {
+    color: var(--tone-red);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    transition: .3s;
+}
+
+.home nav a:hover {
+    transform: scale(.95);
+}
+
+.home .logo {
+    width: 100%;
+}
+
+.home .logo figure {
+    width: 100%;
+}
+
+.home .logo figure img {
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .home .logo figure img {
+        width: 60%;
+        max-width: 700px;
+    }
+}
+
+
+
+@media screen and (min-width: 740px) {
+    .home .logo figure img {
+        width: 40%;
+        max-width: 700px;
+    }
+}
+
+
+
+

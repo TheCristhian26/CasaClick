@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../main.css">
+    <link rel="stylesheet" href="../../css/singleGalery.css">
+    <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg" />
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <title>Galeria de imagenes del inmueble</title>
+</head>
+<body>
+    <header class="dflex fjustify-center faling-items">
+        <nav class="mainNav dflex faling-items fdirection-column">
+            <div class="visualIcons dflex fjustify-between faling-items">
+                <figure class="faling-items dflex"><img src="../../../assets/logo_001.svg" alt="logo-casa-click"></figure>
+                <i class='bx bx-menu-alt-right menu-toggle'></i>
+            </div>
+            <div class="links dflex fdirection-column faling-items">
+                <a href="../../../index.html#home">Inicio</a>
+                <a href="#">Comprar vivienda</a>
+                <a href="#">Vender vivienda</a>
+                <a href="#">Noticias</a>
+                <a href="#">Mapa de viviendas</a>
+                <div class="linkAccess dflex faling-items fjustify-between"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- previsualización de la imgen -->
+    <div class="previewImg">
+        <section class="printImgPre">
+            <div class="btnClose">
+                <h3>Visualización imagen</h3>
+                <i class='bx bx-x closeBtnPre' ></i>
+            </div>
+            <div class="imgView">
+                <img alt="imagen-de-previsualización">
+            </div>
+        </section>
+    </div>
+    <div class="space"></div>
+    <main class="contentGalery">
+        <section class="contentImg">
+            <div class="titleBtn">
+                <h2>Galeria del inmueble</h2>
+                <a href="#" class="dflex faling-items" onclick="history.back()">
+                    <i class='bx bx-chevron-left'></i>
+                    <p>Regresar</p>
+                </a>
+            </div>
+            <div class="printInfo"></div>
+        </section>
+    </main>
+
+    <script src="../../js/public/mainMap.js" type="module"></script>
+    <script src="../../js/public/singleGalery.js" type="module"></script>
+</body>
+</html>

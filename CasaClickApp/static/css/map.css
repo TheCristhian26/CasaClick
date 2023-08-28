@@ -1,0 +1,117 @@
+.mapaSection {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.controllers {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.controller {
+    background-color: var(--tone-white);
+    padding: 20px 10px;
+    border-radius: 13px;
+    margin-bottom: 75px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.controller button {
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    margin: 8px 0;
+    transition: .3s;
+}
+
+.controller button:hover {
+    transform: scale(1.1);
+}
+
+.reloadIcon {
+    margin-bottom: 10px;
+}
+
+.fly {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.flyTo {
+    background-color: var(--tone-white);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin: 0 auto;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+.flyTo .backHome a {
+    color: var(--tone-red);
+}
+
+.flyTo .backHome i {
+    font-size: 20px;
+}
+
+.flyTo select {
+    color: var(--tone-red);
+    outline: none;
+    border: none;
+    background-color: unset;
+    margin-left: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.flyTo select option {
+    cursor: pointer;
+}
+
+.cardSite {
+    width: 250px;
+    overflow: hidden;
+}
+
+.cardSite figure {
+    width: 50%;
+}
+
+.cardSite figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardSite div {
+    width: 45%;
+}
+
+.cardSite div p {
+    margin: 0;
+}
+
+.cardSite div h3 {
+    color: var(--tone-red);
+}
+
+.cardSite div a {
+    background-color: var(--tone-red);
+    color: var(--tone-white);
+    padding: 2px 0;
+    border-radius: 15px;
+    text-align: center;
+}

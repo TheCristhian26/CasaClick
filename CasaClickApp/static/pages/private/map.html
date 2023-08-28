@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg" />
+    <link rel="stylesheet" href="../../css/private/main.css">
+    <link rel="stylesheet" href="../../css/private/siteCreate.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <title>cPanel | Crear punto en el mapa</title>
+</head>
+<body>
+    <header class="dflex fjustify-center faling-items">
+        <div class="visualIcons dflex fjustify-between faling-items">
+            <figure class="faling-items dflex"><img src="../../../assets/logo_001.svg" alt="logo-casa-click"></figure>
+            <div class="userData">
+                <h2>Marcos Admin</h2>
+                <p>Admin</p>
+            </div>
+        </div>
+    </header>
+    <div class="logout">
+        <i class='bx bx-log-out-circle'></i>
+    </div>
+    <div class="space"></div>
+    <div class="home">
+        <nav class="Links dflex faling-items fjustify-center">
+            <a href="./home.html">Inicio</a>
+            <a href="#">Mapa</a>
+            <a href="./galery.html">Galeria de fotos</a>
+        </nav>
+    </div>
+    <main class="createSite">
+        <div class="contentForm dflex faling-items fjustify-center">
+            <div class="imagePrint dflex faling-items fjustify-center fdirection-column">
+                <h2>Previsualización de la imagen</h2>
+                <p>Cuando selecciones la imagen a subir, se reflejará en este espacio</p>
+            </div>
+            <form class="siteCreate">
+                <h2>Crear un nuevo punto en el mapa</h2>
+                <div class="fileInput dflex faling-items fjustify-center fdirection-column">
+                    <p>Recuerda por favor no pasar los <strong>5mb</strong> de peso</p>
+                    <div class="btnInput dflex faling-items fjustify-center">
+                        <i class='bx bxs-file-image'></i>
+                        <p>Subir una imagen</p>
+                    </div>
+                    <input type="file" style="display: none;" name="image" class="image">                    
+                </div>
+                <div class="datos dflex fdirection-column">
+                    <input type="text" name="title" placeholder="Titulo" class="test">
+                    <input type="text" name="shortTitle" placeholder="Titulo de máximo 20 caracteres" maxlength="20">
+                    <input type="text" name="lat" placeholder="Latitud">
+                    <input type="text" name="lon" placeholder="Longitud">
+                    <input type="text" name="address" placeholder="Dirección">
+                    <input type="text" name="shortDescription" placeholder="Esta descripción debe ser de máximo 100 caracteres" maxlength="100">
+                    <div class="contentSelect">
+                        <select name="category" id="category">
+                            <option value="none" disabled selected>Seleccionar Categoria</option>
+                            <option value="casa">Casa</option>
+                            <option value="apartamento">Apartamento</option>
+                            <option value="finca">Finca</option>
+                            <option value="local">Local</option>
+                            <option value="tienda">Tienda</option>
+                            <option value="bar">Bar</option>
+                        </select>
+                    </div>
+                    <p style="margin: 10px 0;color: red;">Cuando quieras hacer un saldo de una sola linea escribe <strong>&lt;br&gt;</strong> o <strong>&lt;br&gt;&lt;br&gt;</strong> para dejar una espacio entre parrafos</p>
+                    <p style="margin: 10px 0;color: red;">también puedes utilizar las etiquetas HTML para que tu contenido sea de mejor SEO. Alguinas opciones son</p>
+                    <ol style="margin-left: 20px;color:red;" >
+                        <li style="margin: 10px 0;">&lt;strong&gt; -> el cual nos coloca el texto en <strong>Negrita</strong></li>
+                        <li style="margin: 10px 0;">&lt;em&gt; -> el cual nos coloca el texto en <em>Cursiva</em></li>
+                        <li style="margin: 10px 0;">&lt;h1&gt; al &lt;h6&gt;  -> las cuales sirven para titulos <h3>texto en h3</h3>Dependiendo el h que utilice bien sea del 1 al 6, el texto cambiará de tamaño siendo el 1 el más grande y el 6 el más pequeño</li>
+                        <li style="margin: 10px 0;">Ejemplos de utilización de estás etiquetas: Cuando estés redactando  vas a envolcer el texto que quieres que tenga las propiedades anteriormente descriptas comenzando con una etiqueta de apertura <strong>&lt;strong&gt;</strong> y una etiqueta de cierre <strong>&lt;/strong&gt;</strong> el resultado de este ejemplo nos daria un texto como el siguiente "<strong>Texto con la propiedad de negrita</strong>"</li>
+                    </ol>
+                    <textarea name="longDescription" id="longDescription" placeholder="Descripción general"></textarea>
+                </div>
+                <div class="sendBtn dflex faling-items fjustify-center">
+                    <button>Craer Marcador</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <script src="../../js/private/main.js" type="module"></script>
+    <script src="../../js/private/siteCreate.js" type="module"></script>
+</body>
+</html>

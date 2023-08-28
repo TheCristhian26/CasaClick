@@ -1,0 +1,176 @@
+/* ayuda de variables 
+    :root {
+
+    --fnt-roboto: 'Roboto', sans-serif;
+
+    --fnt-thin: 100;
+    --fnt-light: 300;
+    --fnt-regular: 400;
+    --fnt-medium: 500;
+    --fnt-bold: 700;
+    --fnt-black: 900;
+
+    --tone-red: #FF0000;
+    --tone-red-1: #FFE5E5;
+    --tone-red-2: #FFB8B8;
+    --tone-white: #fff;
+    --tone-black: #464646;
+    --tone-gray-1: #A7A7A7;
+    --tone-gray-2: #BDBDBD;
+
+
+    --tone-gradient
+*/
+
+.login {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.createCount {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.content {
+    width: 90%;
+    max-width: 600px;
+    color: var(--tone-red);
+}
+
+.title {
+    width: 100%;
+}
+
+.title nav a {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: var(--tone-red);
+    transition: .3s;
+}
+
+.title nav a:hover {
+    transform: scale(0.95);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.041);
+}
+
+.title h2 {
+    font-weight: var(--fnt-medium);
+    font-size: 26px;
+}
+
+.title nav a i {
+    font-size: 24px;
+}
+
+.formLogin {
+    width: 96%;
+}
+
+.formLogin form {
+    width: 100%;
+}
+
+.formLogin form input {
+    border: none;
+    outline: none;
+    background-color: var(--tone-red-1);
+    padding: 13px 30px;
+    margin-top: 30px;
+    font-family: var(--fnt-roboto);
+    border-radius: 25px;
+    font-size: 16px;
+    color: var(--tone-red);
+}
+
+.formLogin form input::placeholder {
+    font-family: var(--fnt-roboto);
+    color: var(--tone-red-2);
+}
+
+.formLogin form .forgetPassowrd {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    text-align: right;
+}
+
+.formLogin form .forgetPassowrd a {
+    color: var(--tone-gray-1);
+    font-weight: var(--fnt-light);
+    text-decoration: underline;
+}
+
+.formLogin form button {
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+    background: var(--tone-gradient);
+    color: var(--tone-white);
+    font-size: 16px;
+    font-family: var(--fnt-roboto);
+    font-weight: var(--fnt-light);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.formLogin form button:hover {
+    transform: scale(0.95);
+}
+
+.createCount {
+    color: var(--tone-gray-1);
+}
+
+.createCount p {
+    margin-right: 10px;
+}
+
+.createCount a {
+    color: var(--tone-red-3);
+    font-weight: var(--fnt-medium);
+    text-decoration: underline;
+}
+
+
+/* respuesta del servidor */
+.resServer {
+    position: absolute;
+    display: none!important;
+    padding: 10px 20px;
+    bottom: 80px;
+    right: 0px;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid var(--tone-red);
+    transition: .3s;
+}
+
+.resServer i {
+    font-size: 24px;
+}
+
+.resActive {
+    display: flex!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,247 @@
+/* importacion de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* creacion de variables */
+:root {
+    /* font family */
+    --fnt-roboto: 'Roboto', sans-serif;
+
+    /* grosores de fuentes */
+    --fnt-thin: 100;
+    --fnt-light: 300;
+    --fnt-regular: 400;
+    --fnt-medium: 500;
+    --fnt-bold: 700;
+    --fnt-black: 900;
+
+    /* paleta de colores */
+    --tone-red: #FF0000;
+    --tone-red-1: #FFE5E5;
+    --tone-red-2: #FFB8B8;
+    --tone-red-3: #940000;
+    --tone-white: #fff;
+    --tone-black: #464646;
+    --tone-gray-1: #A7A7A7;
+    --tone-gray-2: #BDBDBD;
+    --tone-gray-3: #555555;
+
+    /* gradientes */
+    --tone-gradient: linear-gradient(90deg, rgba(255,126,126,1) 0%, rgba(255,68,68,1) 50%, rgba(255,0,0,1) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos basicos a etiquetas */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* clases custom */
+.dflex {
+    display: flex;
+}
+
+.fjustify-center {
+    justify-content: center;
+}
+
+.fjustify-between {
+    justify-content: space-between;
+}
+
+.faling-items {
+    align-items: center;
+}
+
+.fdirection-column {
+    flex-direction: column;
+}
+
+.fdirection-row {
+    flex-direction: row;
+}
+
+/* configuracion general */
+
+body {
+    font-family: var(--fnt-roboto);
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 3;
+    padding: 15px 0;
+}
+
+/* configuracion navBar mobileFirst */
+
+.mainNav {
+    width: 80%;
+    height: 42px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 0px 15px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
+    transition: .3s;
+    position: relative;
+}
+
+.visualIcons {
+    width: 100%;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    color: #FF0000;
+    font-size: 30px;
+}
+
+.links {
+    width: 100%;
+}
+
+.links a {
+    color: var(--tone-red);
+    margin: 10px 0;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.linkAccess {
+    width: 95%;
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+
+.linkAccess .login {
+    background-color: var(--tone-red);
+    color: var(--tone-white);
+    padding: 5px 13px;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.linkAccess .dashboard {
+    background-color: var(--tone-red);
+    color: var(--tone-white);
+    padding: 5px 8px;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.linkAccess .logout {
+    border: 1px solid var(--tone-red);
+    padding: 5px 8px;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.linkAccess .login:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.linkAccess .dashboard:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.linkAccess .logout:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.linkAccess .register:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.linkAccess .login p {
+    margin-left: 5px;
+}
+
+.linkAccess .login i {
+    font-size: 20px;
+}
+
+.linkAccess .register {
+    border: 1px solid var(--tone-red);
+    padding: 5px 13px;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.linkAccess .register p {
+    margin-left: 5px;
+}
+
+.linkAccess .register i {
+    font-size: 20px;
+}
+
+.linkAccess .dashboard p {
+    margin-left: 5px;
+}
+
+.linkAccess .dashboard i {
+    font-size: 20px;
+}
+
+.linkAccess .logout p {
+    margin-left: 5px;
+}
+
+.linkAccess .logout i {
+    font-size: 20px;
+}
+
+/* active class */
+.hidden {
+    height: 300px;
+    border-radius: 13px;
+}
+
+.space {
+    width: 100%;
+    height: 80px;
+}
+
+footer {
+    padding: 20px 50px;
+    margin-top: 30px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
+    color: red;
+}
+
+footer .contentTauro a {
+    margin-left: 10px;
+    color: red;
+}
+
+footer .contentTauro a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 470px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .contentTauro {
+        margin-top: 10px;
+    }
+}
+
