@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../../../style/favicon.svg" />
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/map.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+
+</head>
+<body>
+
+    <header class="dflex fjustify-center faling-items">
+        <nav class="mainNav dflex faling-items fdirection-column">
+            <div class="visualIcons dflex fjustify-between faling-items">
+                <figure class="faling-items dflex"><img src="https://scontent-bog1-1.xx.fbcdn.net/v/t39.30808-6/359474796_772033084713749_245894796258457608_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeFjK7DGTEmCQXY0nmS8j1ngajXV95ACrTZqNdX3kAKtNpMUc2WhE3r9cd3EitDuAxPByWQpEslfTUQznCdghxJA&_nc_ohc=kE4_Jlbmv0UAX-f0olM&_nc_zt=23&_nc_ht=scontent-bog1-1.xx&oh=00_AfBl0rxBPaHKqBZ5sbemHUccZDU0-gF8GYMPDSuJITH-Bw&oe=64F52007" width="50px" height="50px"></figure>
+                <i class='bx bx-menu-alt-right menu-toggle'></i>
+            </div>
+            <div class="links dflex fdirection-column faling-items">
+                <a href="../../../templates/base.html">Inicio</a>
+                <div class="linkAccess dflex faling-items fjustify-between"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact dflex fdirection-column faling-items" style="margin-top: 30px;">
+            <div class="contentFormulario">
+                <div class="imgContent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5tVu5b79YOBUs6kqP4Lty8N1JPpbQMmlaiWQfcVGSMoPoEVEbyYb1a4eR3RK4CSnVGhA&usqp=CAU" height="200px" width="200px">
+                </div>
+                <form action="">
+                    <div class="cardInput nameUser">
+                        <i class='bx bx-user-circle' ></i>
+                        <input type="text" placeholder="Nombre" name="nombre" required>
+                    </div>
+                    <div class="cardInput mailUser">
+                        <i class='bx bx-envelope' ></i>
+                        <input type="text" placeholder="Email" name="correo" required>
+                    </div>
+                    <div class="cardInput phoneUser">
+                        <i class='bx bx-phone' ></i>
+                        <input type="text" placeholder="Celular" name="celular" required>
+                    </div>
+                    <textarea name="mensaje" class="textForm" placeholder="Mensaje" required></textarea>
+                    <div class="contentCheck dflex">
+                        <input type="checkbox" name="tratamiento de datos" required>
+                        <p style="margin-left:10px;">Acepto el <a href="#" style="text-decoration: underline;">tratamiento de datos</a></p>
+                    </div>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../static/js/public/mapFront.js" type="module"></script>
+    <script src="../static/js/public/swiper.js"></script>
+    <script src="../static/js/main.js" type="module"></script>
+</body>
+</html>

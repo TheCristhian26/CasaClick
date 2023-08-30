@@ -7,17 +7,20 @@
     <link rel="icon" type="image/svg+xml" href="../style/favicon.svg" />
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Casa Click</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&libraries=places"></script>
+
+    <title>CasaClick</title>
 </head>
 <body>
     <header class="dflex fjustify-center faling-items">
         <nav class="mainNav dflex faling-items fdirection-column">
             <div class="visualIcons dflex fjustify-between faling-items">
-                <figure class="faling-items dflex"><img src="../style/logo_001.svg" alt="logo-casa-click"></figure>
+                <figure class="faling-items dflex"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5tVu5b79YOBUs6kqP4Lty8N1JPpbQMmlaiWQfcVGSMoPoEVEbyYb1a4eR3RK4CSnVGhA&usqp=CAU" width="50px" height="50px"> </figure>
                 <i class='bx bx-menu-alt-right menu-toggle'></i>
             </div>
             <div class="links dflex fdirection-column faling-items">
@@ -86,19 +89,19 @@
         <section class="mapa" id="mapa">
             <div class="pinesMap dflex fjustify-between">
                 <div class="cardPin dflex fdirection-column faling-items">
-                    <figure><img src="../style/Local.png" alt="localPin"></figure>
+                    <figure><img src="https://www.tcgroupsolutions.com/wp-content/uploads/2021/03/retail-intelligence-tc-street-2.png" width="50px" height="50px"></figure>
                     <p class="green">Local</p>
                 </div>
                 <div class="cardPin dflex fdirection-column faling-items">
-                    <figure><img src="../style/casa.png" alt="casaPin"></figure>
+                    <figure><img src="https://png.pngtree.com/png-clipart/20210516/original/pngtree-cartoon-of-a-big-house-png-image_6279219.jpg" width="50px" height="50px"></figure>
                     <p class="blue">Casa</p>
                 </div>
                 <div class="cardPin dflex fdirection-column faling-items">
-                    <figure><img src="../style/apto.png" alt="apartamentoPin"></figure>
+                    <figure><img src="https://w7.pngwing.com/pngs/21/314/png-transparent-brown-5-storey-house-illustration-apartment-house-apartment-house-building-text-retro.png" width="50px" height="50px"></figure>
                     <p class="grey">Apartamento</p>
                 </div>
                 <div class="cardPin dflex fdirection-column faling-items">
-                    <figure><img src="../style/finca.png" alt="fincaPin"></figure>
+                    <figure><img src="https://w7.pngwing.com/pngs/338/595/png-transparent-farm-cartoon-drawing-illustration-cartoon-illustration-farm-cartoon-character-other-leaf.png" width="50px" height="50px"></figure>
                     <p class="red">Fincas</p>
                 </div>
             </div>
@@ -114,52 +117,6 @@
                 <a href="http://Wa.me/573186007255">Contacto</a>
             </div>
         </section>
-        <section class="newsletter dflex fjustify-center">
-            <div class="contentNewSletter dflex faling-items fdirection-column">
-                <h2>Unete a nuestras noticias</h2>
-                <div class="parrafoSletter">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed sollicitudin purus. Praesent et lacus convallis</p>
-                </div>
-                <div class="contentInputSend">
-                    <form>
-                        <input type="email" placeholder="Tu correo" name="CorreoSubscripcion">
-                        <button>Suscribete</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section class="propiedades dflex fjustify-center faling-items fdirection-column" style="margin-top: 50px;" id="propiedades">
-            <h2 style="color: red; font-size: 35px;margin-top: 50px;text-align:center;" class="titleNews">Propiedades</h2>
-            <div class="parrafoIndex">
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
-            </div>
-            <div class="printPropiedades dflex fdirection-column faling-items">
-
-            </div>
-            <a class="allNews" href="../static/pages/public/map.html">Ver más propiedades</a>
-        </section>
-        <section class="CompraVende dflex fdirection-column faling-items" style="margin-top: 60px;">
-            <div class="cardShop dflex faling-items fjustify-between contentVende" id="cvivienda">
-                <div class="contentText">
-                    <h2>Venta de propiedad</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    <button class="compraComponent">Ver más</button>
-                </div>
-                <div class="contentImg">
-                    <img src="../style/img/img__001.jpg" alt="compra-de-vivienda">
-                </div>
-            </div>
-            <div class="cardShop dflex faling-items fjustify-between contentCompra" id="vvivienda">
-                <div class="contentImg">
-                    <img src="../style/img/img__001.jpg" alt="compra-de-vivienda">
-                </div>
-                <div class="contentText">
-                    <h2>Compra de propiedad</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    <button class="compraComponent">Ver más</button>
-                </div>
-            </div>
-        </section>
         <section class="contact dflex fdirection-column faling-items" style="margin-top: 50px;">
             <div class="contentInformation">
                 <h2>Contacto</h2>
@@ -167,7 +124,7 @@
             </div>
             <div class="contentFormulario">
                 <div class="imgContent">
-                    <img src="../style/logo_002.svg" alt="imagen-formulario">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5tVu5b79YOBUs6kqP4Lty8N1JPpbQMmlaiWQfcVGSMoPoEVEbyYb1a4eR3RK4CSnVGhA&usqp=CAU" height="300px" width="300px">
                 </div>
                 <form action="">
                     <div class="cardInput nameUser">
@@ -196,7 +153,7 @@
         <h3>Casa click </h3>
         <div class="contentTauro dflex">
             <p>Derechos reservados 2023 &copy;  </p>
-            <a href="#"></a>
+            
         </div>
     </footer>
 

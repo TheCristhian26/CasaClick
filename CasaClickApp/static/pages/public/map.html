@@ -1,21 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../../style/favicon.svg" />
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
-    <link rel="stylesheet" href="../../../main.css">
+    <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/map.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <title>Mapa de propiedades para compra y venta en Pamplona (finca raíz)</title>
 </head>
 <body>
     <header class="dflex fjustify-center faling-items">
         <nav class="mainNav dflex faling-items fdirection-column">
             <div class="visualIcons dflex fjustify-between faling-items">
-                <figure class="faling-items dflex"><img src="../../../assets/logo_001.svg" alt="logo-casa-click"></figure>
+                <figure class="faling-items dflex"><img src="https://scontent-bog1-1.xx.fbcdn.net/v/t39.30808-6/359474796_772033084713749_245894796258457608_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeFjK7DGTEmCQXY0nmS8j1ngajXV95ACrTZqNdX3kAKtNpMUc2WhE3r9cd3EitDuAxPByWQpEslfTUQznCdghxJA&_nc_ohc=kE4_Jlbmv0UAX-f0olM&_nc_zt=23&_nc_ht=scontent-bog1-1.xx&oh=00_AfBl0rxBPaHKqBZ5sbemHUccZDU0-gF8GYMPDSuJITH-Bw&oe=64F52007" width="50px" height="50px"></figure>
                 <i class='bx bx-menu-alt-right menu-toggle'></i>
             </div>
             <div class="links dflex fdirection-column faling-items">
@@ -34,36 +40,59 @@
     <main class="controllers dflex fjustify-center faling-items">
         <section class="controller dflex fjustify-center fdirection-column faling-items">
             <div class="reloadIcon">
-                <button class="reload"><img src="../../../assets/icons/icon_002.svg" alt=""></button>
+                <button class="reload"><img src="https://png.pngtree.com/thumb_back/fw800/background/20221020/pngtree-reload-red-flat-icon-isolated-circular-round-arrows-photo-image_15067714.jpg" width="50px" height="50px" alt=""></button>
             </div>
             <div class="filterIcon dflex fdirection-column">
-                <button class="fincaPanel"><img src="../../../assets/icons/icon_003.svg" alt="filtro-fincas"></button>
-                <button class="casaPanel"><img src="../../../assets/icons/icon_005.svg" alt="filtro-casa"></button>
-                <button class="apartamentoPanel"><img src="../../../assets/icons/icon_006.svg" alt="filtro-apartamento"></button>
-                <button class="localPanel"><img src="../../../assets/icons/icon_007.svg" alt="filtro-locales"></button>
-                <button class="marketPanel"><img src="../../../assets/icons/icon_001.svg" alt="filtro-mercado"></button>
-                <button class="barPanel"><img src="../../../assets/icons/icon_004.svg" alt="filtro-bares"></button>
+                <a>Finca</a>
+                <button class="fincaPanel"><img src="https://i.pinimg.com/550x/98/61/1d/98611dbae0db87a4f65691a584518e4f.jpg" width="50px" height="50px"></button>
             </div>
+            <div class="filterIcon dflex fdirection-column">
+                <a>Casas</a>
+                <button class="fincaPanel"><img src="https://arquitectopablorestrepo.com/wp-content/uploads/2018/03/Dise%C3%B1o-casa-campestre-las-margaritas-5-1-800x600.jpg"  idth="50px" height="50px"></button>
+            </div>
+            <div class="filterIcon dflex fdirection-column">
+                <a>Apartamentos</a>
+                <button class="fincaPanel"><img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/226744836.jpg?k=7e5a0e12b888a4f902533174bf3f487302c0f8f4c6ed2ac5f1f8f8d5b8a87b22&o=&hp=1" width="50px" height="50px"></button>
+            </div>
+            <div class="filterIcon dflex fdirection-column">
+                <a>Locales</a>
+                <button class="fincaPanel"><img src="https://retailers.mx/revista/wp-content/uploads/2021/01/local-comercial-rt.jpg" width="50px" height="50px"></button>
+            </div>
+
         </section>
     </main>
     <main class="fly">
         <section class="flyTo dflex faling-items fjustify-between">
             <div class="backHome">
-                <a href="../../../index.html" class="dflex faling-items fjustify-center">
+                <a href="../../../templates/base.html" class="dflex faling-items fjustify-center">
                     <i class='bx bx-chevron-left'></i>
                     <p>Regresar</p>
                 </a>
             </div>
             <div class="selectCity dflex faling-items">
-                <figure><img src="../../../assets/icons/icon_008.svg" alt="icon-pin-position"></figure>
-                <select name="city" id="city">
-                </select>
-            </div>
-        </section>
-    </main>
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-    <script src="../../js/public/mainMap.js" type="module"></script>
-    <script src="../../js/public/map.js" type="module"></script>
-    <script src="../../js/public/map.controller.js" type="module"></script>
-</body>
-</html>
+                <figure><img src=""> <i class="fa-regular fa-arrows-repeat"> </i> <alt="icon-pin-position"></figure>
+                    <select name="city" id="city">
+                    </select>
+                </div>
+            </section>
+        </main>
+        <div id="map" style="height: 400px; width: 100%;"></div>
+  <script>
+    function initMap() {
+      var mapOptions = {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 8
+      };
+      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap"></script>
+
+
+
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+        <script src="../../js/public/mainMap.js" type="module"></script>
+        <script src="../../js/public/map.js" type="module"></script>
+        <script src="../../js/public/map.controller.js" type="module"></script>
+    </body>
+    </html>
