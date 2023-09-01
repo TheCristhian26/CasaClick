@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div>
+        <center>
+            <h1>
+                Formulario
+            </h1>
+        </center>
+    </div>
+    <header>
+        <div class="content">
+            <form action="" method="post" class="pt-5">
+                <div class="">
+                    <label for="codigo" class="form-label"> Codigo:</label>
+                    <input type="numeric" class="form-control" id="codigo" name="codigo">
+                </div> 
+                <div class="">
+                    <label for="nombre" class="form-label"> Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                </div> 
+                <div class="">
+                    <label for="contacto" class="form-label"> Contacto:</label>
+                    <input type="numeric" class="form-control" id="contacto" name="contacto">
+                </div> 
+                <div class="">
+                    <label for="ciudad" class="form-label"> Ciudad:</label>
+                    <select name="ciudad" id="ciudad">
+                        <option value="0">Seleccione</option>
+                        <option value="1">Pamplona</option>
+                        <option value="2">Cucuta</option>
+                        <option value="3">Bucaramanga</option>
+                    </select>
+                </div> 
+                <div class="">
+                    <label for="tipoInmueble" class="form-label"> Tipo Inmueble:</label>
+                    <select name="tipoInmueble" id="tipoInmueble">
+                        <option value="0">Seleccione</option>
+                        <option value="1">Casa</option>
+                        <option value="2">Apartamento</option>
+                        <option value="3">Casa Lote</option>
+                    </select>
+                </div> 
+                <div class="">
+                    <label for="habitaciones" class="form-label"> N° Habitaciones:</label>
+                    <input type="number"  class="form-control" id="habitaciones" name="habitaciones" max="20" min="1">
+                </div> 
+                <div class="">
+                    <label for="comedor" class="form-label"> Comedor:</label>
+                    <select name="comedor" id="comedor">
+                        <option value="0">Seleccione</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                </div> 
+                <div class="">
+                    <label for="sala" class="form-label"> Sala:</label>
+                    <select name="sala" id="sala">
+                        <option value="0">Seleccione</option>
+                        <option value="1">Pequeña</option>
+                        <option value="2">Mediana</option>
+                        <option value="3">Amplia</option>
+                        <option value="4">No tiene</option>
+                    </select>
+                </div> 
+                <div class="">
+                    <label for="baños" class="form-label"> Baños:</label>
+                    <input type="number"  class="form-control" id="baños" name="baños" max="4" min="0">
+                </div> 
+                <div class="">
+                    <label for="cocina" class="form-label"> Cocina:</label>
+                    <select name="cocina" id="cocina">
+                        <option value="0">Seleccione</option>
+                        <option value="1">Integral</option>
+                        <option value="2">semiIntegral</option>
+                        <option value="3">Sencilla</option>
+                    </select>
+                </div> 
+                <div class="">
+                    <label for="garage" class="form-label"> Garage:</label>
+                    <select name="garage" id="garage">
+                        <option value="0">Seleccione</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                </div> 
+                <div class="">
+                    <label for="patio" class="form-label"> Patio:</label>
+                    <select name="patio" id="patio">
+                        <option value="0">Seleccione</option>
+                        <option value="1">Pequeño</option>
+                        <option value="2">Mediana</option>
+                        <option value="3">Amplio</option>
+                        <option value="4">No tiene</option>
+                    </select>
+                </div> 
+                <div class="">
+                    <label for="balcon" class="form-label"> Balcon:</label>
+                    <select name="balcon" id="balcon">
+                        <option value="0">Seleccione</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="">
+                    <label for="estrato" class="form-label"> Estrato:</label>
+                    <input type="number"  class="form-control" id="estrato" name="estrato" max="5" min="1">
+                </div>
+                <div class="">
+                    <label for="piso" class="form-label"> Piso:</label>
+                    <input type="number"  class="form-control" id="piso" name="psio" max="10" min="1">
+                </div> 
+                <div class="">
+                    <label for="metrosCuadrados" class="form-control">Metros Cuadrados:</label>
+                    <input type="number" name="metrosCuadrados" id="metrosCuadrados" step="0.01">
+                </div>
+                <div>
+                    <label for="precio" class="form-control"> Precio:</label>
+                    <input type="number" id="precio" name="precio" step="0.01">
+                </div>
+                <div>
+                    <label for="precio_por_metro">Precio por Metro Cuadrado:</label>
+                    <input type="text"   id="precio_por_metro" name="precio_por_metro" aria-label="Disabled input example" disabled readonly><br>
+                </div>
+                <div>
+                    <label for="imagenes">Agregar Imagenes:</label>
+                    <input type="file" name="imagenes" id="imagenes">
+                </div>
+                <div class="col-sm-12justifycontent-start">
+                    <button name="limpiarFormulario" id="limpiarFormulario">Limpiar</button> 
+                    <button type="submit">Enviar Datos</button>
+                </div>
+            </form>
+        </div> 
+    </header>
+</body>
+</html>
+<script>
+    document.getElementById("limpiarFormulario").addEventListener("click", function() {
+        document.getElementById("miFormulario").reset();
+    });
+</script>
+<script>
+    // Obtén referencias a los elementos del formulario
+    const precioInput = document.getElementById("precio");
+    const metrosCuadradosInput = document.getElementById("metrosCuadrados");
+    const precioPorMetroInput = document.getElementById("precio_por_metro");
+
+    // Escucha el evento "input" en los campos de entrada
+    precioInput.addEventListener("input", calcularPrecioPorMetro);
+    metrosCuadradosInput.addEventListener("input", calcularPrecioPorMetro);
+
+    // Función para calcular el precio por metro cuadrado
+    function calcularPrecioPorMetro() {
+        // Obtén los valores de los campos
+        const precio = parseFloat(precioInput.value);
+        const metrosCuadrados = parseFloat(metrosCuadradosInput.value);
+
+        // Calcula el precio por metro cuadrado
+        const precioPorMetro = precio / metrosCuadrados;
+
+        // Actualiza el campo "Precio por Metro Cuadrado"
+        precioPorMetroInput.value = isNaN(precioPorMetro) ? "" : precioPorMetro.toFixed(2);
+
+        // Comprueba si el valor es un número válido
+        if (!isNaN(precioPorMetro)) {
+            // Formatea el número con puntos de mil y dos decimales
+            const precioPorMetroFormateado = precioPorMetro.toLocaleString('es-ES', {
+                style: 'currency',
+                currency: 'COP', // Puedes ajustar la moneda según tus necesidades
+                minimumFractionDigits: 2, // Muestra dos decimales
+                maximumFractionDigits: 2,
+            });
+
+            // Actualiza el campo "Precio por Metro Cuadrado" con el valor formateado
+            precioPorMetroInput.value = precioPorMetroFormateado;
+        }
+    }
+
+    // Escucha el evento "input" en el campo de entrada
+    precioPorMetroInput.addEventListener("input", calcularPrecioPorMetro);
+</script>

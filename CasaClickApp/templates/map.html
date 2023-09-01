@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Encabezado y otros metadatos -->
+
+    <title>Mapa de propiedades para compra y venta en Pamplona (finca raíz)</title>
+</head>
+<body>
+    <header class="dflex fjustify-center faling-items">
+        <!-- Contenido del encabezado -->
+    </header>
+    <main class="mapaSection">
+        <div id="map"></div>
+    </main>
+    <main class="controllers dflex fjustify-center faling-items">
+        <!-- Contenido de los controles del mapa -->
+    </main>
+    <main class="fly">
+        <!-- Contenido para la función de volar al mapa -->
+    </main>
+    <div id="mapCasaclick" style="height: 400px; width: 100%;"></div>
+    <script>
+        function initMap() {
+            var mapOptions = {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8
+            };
+            var map = new google.maps.Map(document.getElementById('mapCasaclick'), mapOptions);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB6gho1iy_d9JozIFbsoy7wYywNOip1Vc"></script>
+    <script src="../../js/public/mainMap.js" type="module"></script>
+    <script src="../../js/public/map.js" type="module"></script>
+    <script src="../../js/public/map.controller.js" type="module"></script>
+</body>
+</html>
